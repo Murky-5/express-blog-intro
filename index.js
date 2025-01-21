@@ -25,8 +25,9 @@ app.get('', (req, res) => {
 });
 
 app.get('/bacheca', (req, res) => {
-    res.send(memePosts)
+    res.json(memePosts)
 })
+
 
 app.listen(port, `${hostname}`, () => {
     console.log(`Listening on http://${hostname}:${port}/`);
